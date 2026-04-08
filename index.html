@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Box Icons Library -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <title>Headless Pizza &#127829;</title>
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div id="root">
+    
+    <div class="header">
+      <div class="header__logo-cont">
+        <img src="./assets/images/logo-BuYRnk05.png" alt="Headless Pizza">
+      </div>
+      <div class="header__search">
+        <input placeholder="Search for your favorite Pizza" class="header__search-input" id="searchInput">
+        <div class="header__search-submit">
+          <i class="bx bx-search-alt-2"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-content">
+        <div class="main-content__upper">
+          <h2 class="main-content__upper-title">Showing our<span> Pizza Menu</span></h2>
+          <!-- Note: A sorting dropdown could be added here if needed, based on CSS classes -->
+        </div>
+
+        <div class="items" id="itemsContainer">
+          
+          <div class="item" data-name="BBQ Chicken Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/bbq-chicken.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">BBQ Chicken Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4.6</div>
+              </div>
+              <div class="item__price">$16.25</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Hawaiian Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/hawaiian.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Hawaiian Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4</div>
+              </div>
+              <div class="item__price">$14</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Vegetarian Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/vegetarian.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Vegetarian Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4.2</div>
+              </div>
+              <div class="item__price">$13</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Pepperoni Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/pepperoni.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Pepperoni Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>5</div>
+              </div>
+              <div class="item__price">$15.75</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Margherita Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/margherita.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Margherita Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4.5</div>
+              </div>
+              <div class="item__price">$12.5</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Onion Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/onion.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Onion Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>3.6</div>
+              </div>
+              <div class="item__price">$15</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Garlic Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/garlic.png" alt="Dish">
+            </div>
+            <h3 class="item__name">Garlic Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4.4</div>
+              </div>
+              <div class="item__price">$28</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Chessy Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/cheesy.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Chessy Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>4.7</div>
+              </div>
+              <div class="item__price">$25.12</div>
+            </div>
+          </div>
+          
+          <div class="item" data-name="Tomato Pizza">
+            <div class="item__img-cont">
+              <img src="./assets/images/tomato.jpg" alt="Dish">
+            </div>
+            <h3 class="item__name">Tomato Pizza</h3>
+            <div class="item__highlights">
+              <div class="item__rating">
+                <div class="item__rating-icon-cont"><i class="bx bxs-star"></i></div>
+                <div>5</div>
+              </div>
+              <div class="item__price">$20</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup elements to mirror the original functionality -->
+    <div class="items__item-overlay" id="overlay"></div>
+    <div class="items__item-popup" id="popup">
+      <div class="items__item-popup-img-cont">
+        <img src="" alt="Dish" id="popupImg">
+      </div>
+      <div class="items__item-popup-main">
+        <h3 class="items__item-popup-name" id="popupName">Name</h3>
+        <div class="items__item-popup-rating">
+          <div class="items__item-popup-rating-icon-cont"><i class="bx bxs-star"></i></div>
+          <div id="popupRating">5</div>
+        </div>
+        <p id="popupDesc">Delicious pizza with fresh ingredients baked to perfection.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__upper">
+          <div class="footer__branding">
+            <div class="footer__logo-cont">
+              <img src="./assets/images/logo-BuYRnk05.png" alt="Swiggy Logo">
+            </div>
+            <p class="footer__text">Headless Pizza is a demo app to showcase Pizza Menu built using Wix Studio's Headless CMS as the Backend along with plain HTML/JS/CSS as the Frontend clone.</p>
+            <div class="footer__socials">
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+              <i class="bx bxl-youtube"></i>
+              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-whatsapp"></i>
+            </div>
+          </div>
+          <div class="footer__newsletter">
+            <h4 class="footer__newsletter-title">Subscribe</h4>
+            <form class="footer__newsletter-form">
+              <input placeholder="johndoe@gmail.com" type="text">
+              <button type="button">Subscribe</button>
+            </form>
+            <p>Subscribe to our newsletter for latest updates, deals and offers related to Headless Pizza right inside your mailbox.</p>
+          </div>
+        </div>
+        <div class="footer__lower">
+          <div class="text">© 2024 Headless Pizza Limited</div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
