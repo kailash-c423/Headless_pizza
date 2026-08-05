@@ -545,3 +545,42 @@ body {
   font-size: 1.4rem;
   text-align: center;
 }
+.items__item-popup-price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.items__item-popup-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ff8b2d;
+  background: #fff3eb;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ffccaa;
+}
+.discount-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  background: #ff8b2d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.discount-btn:hover:not(:disabled) {
+  background: #f66f00;
+}
+.discount-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.discount-status {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
